@@ -1,0 +1,18 @@
+name: DadaTrade
+version: '1.5.1'
+main: it.dadasmp.trade.DadaTradePlugin
+api-version: '1.20'
+author: DadaSMP
+description: Trade sicuri con item, soldi, conferma e countdown per Paper 1.20.1.
+softdepend: [Vault]
+commands:
+  trade:
+    description: Scambia item e soldi con altri player.
+    usage: /trade <player|accept|deny|money|cancel>
+permissions:
+  dadatrade.use:
+    description: Permette di usare /trade.
+    default: true
+  dadatrade.admin:
+    description: Permette reload/debug futuri di DadaTrade.
+    default: op
